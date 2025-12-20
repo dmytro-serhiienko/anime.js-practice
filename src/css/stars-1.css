@@ -1,0 +1,55 @@
+.star-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+}
+
+.stars__box {
+}
+
+.ri-star-fill {
+  display: inline-block !important; /* ЦЕ ОБОВ'ЯЗКОВО ДЛЯ АНІМАЦІЇ */
+  color: #ffc107;
+  font-size: 24px;
+  margin: 0 2px;
+  animation: starAnimation 1.5s 3 !important;
+}
+
+.ri-star-fill {
+  display: inline-block !important;
+  will-change: transform; /* Підказує браузеру готувати відеокарту для анімації */
+  transform-origin: center center; /* Точка відліку — центр іконки */
+  animation: starAnimation 1.5s ease-in-out 3 !important;
+}
+
+.content {
+}
+
+.content-text {
+  font-size: 20px;
+  color: #343a40;
+}
+
+@keyframes starAnimation {
+  0% {
+    transform: scale(1) translateY(-8px); /* Обидві дії в одному рядку */
+    color: #ffc107;
+  }
+  50% {
+    transform: scale(1.5) translateY(2px); /* Масштаб + рух */
+    color: #ffeb3b;
+  }
+  100% {
+    transform: scale(1) translateY(-8px);
+    color: #ffc107;
+  }
+}

@@ -1,0 +1,16 @@
+.text__section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.text__wrap {
+  width: 600px;
+}
+
+.text {
+  font-size: 20px;
+  line-height: 1.5;
+  text-align: center;
+}
